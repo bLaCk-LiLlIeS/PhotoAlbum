@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="photo active" style="
+            background-image: url('IMAGES//IMG20210311173402_00.jpg');
+            ">
+            <h3>
+                <span style='font-size:50px;'>&#8620;</span>
+            </h3>
+        </div>
+        <div class="photo  " style="
+            background-image: url('IMAGES/WhatsApp\ Image\ 2024-03-23\ at\ 12.53.46\ AM.jpeg');
+            ">
+            <h3>
+                <span style='font-size:50px;'>&#8620;</span>
+            </h3>
+        </div>
+        <div class="photo  " style="
+            background-image: url('IMAGES/WhatsApp\ Image\ 2024-03-23\ at\ 12.54.18\ AM.jpeg');
+            ">
+            <h3>
+                <span style='font-size:50px;'>&#8620;</span>
+            </h3>
+        </div>
+        <div class="photo  " style="
+            background-image: url('IMAGES/WhatsApp\ Image\ 2024-03-23\ at\ 12.54.20\ AM.jpeg');
+            ">
+            <h3>
+                <span style='font-size:50px;'>&#8620;</span>
+            </h3>
+        </div>
+        <div class="photo  " style="
+            background-image: url('IMAGES/WhatsApp\ Image\ 2024-03-23\ at\ 12.55.05\ AM.jpeg');
+            ">
+            <h3>
+                <span style='font-size:50px;'>&#8620;</span>
+            </h3>
+        </div>
+        <!-- <div class="photo " style="
+            background-image: url('');
+            ">
+            <h3>
+                <span style='font-size:50px;'>&#8620;</span>
+            </h3>
+        </div>
+        <div class="photo " style="
+            background-image: url('');
+            ">
+            <h3>
+                <span style='font-size:50px;'>&#8620;</span>
+            </h3>
+        </div>
+        <div class="photo " style="
+            background-image: url('');
+            ">
+            <h3>
+                <span style='font-size:50px;'>&#8620;</span>
+            </h3>
+        </div>
+        <div class="photo " style="
+            background-image: url('');
+            ">
+            <h3>
+                <span style='font-size:50px;'>&#8620;</span>
+            </h3>
+        </div> -->
+    </div>
+    <script>
+   const        panels = document.querySelectorAll('.photo');
+
+   panels.forEach(panels=>{
+    panels.addEventListener('click',()=>{
+       
+        removeActive();
+        
+        panels.classList.add('active')
+    })
+   })
+     function removeActive(){
+        panels.forEach(panels=>{
+           panels.classList.remove('active'); 
+        });
+     }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+         height: 250px;
+         width: 250px;
+         /* object-fit: cover; */
+         background-size: auto 100%;
+         
+        }
+        .image{
+width: 100%;
+height: 100%;
+background-size: auto 60%;
+background-repeat: no-repeat;
+z-index: 1;
+/* transform: scale(1.); */
+background-position: center;
+cursor: pointer;
+/* mask-size: 150px 100px; */
+        }
+        .container:hover .image{
+            -webkit-mask-image: none;
+            mask-image: none;
+            width: 500px;
+height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn-icons-png.freepik.com/256/10415/10415970.png?ga=GA1.1.69850276.1659768653&" alt="">
+        <div class="image " style="
+             background-image: url(IMAGES/IMG20210311173402_00.jpg);
+             mask-image: url('https://cdn-icons-png.freepik.com/256/10415/10415970.png?ga=GA1.1.69850276.1659768653&');
+            ">
+
+        </div>
+    </div>
+</body>
+</html>
